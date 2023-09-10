@@ -1,5 +1,7 @@
 ---
 import '../styles/global.css';
+import Navigation from '../components/Navigation.astro';
+import Footer from '../components/Footer.astro';
 
 const pageTitle = 'About Me';
 
@@ -40,10 +42,8 @@ const textCase = 'uppercase';
             }
         </style>
     </head>
-    <body>
-        <a href='/'>Home</a>
-        <a href='/about'>About</a>
-        <a href='/blog'>Blog</a>
+    <b>
+        <Navigation />
         <h1>{pageTitle}</h1>
         <p
             >I am a front-end developer currently interested in learning the
@@ -82,5 +82,6 @@ const textCase = 'uppercase';
                 <p>My goal is not 3 days.</p>
             )
         }
+        <Footer />
     </body>
 </html>
